@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adobe Icon Generator</title>
+
+        <script defer src="index.js"></script>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <noscript>
+            <h1 style="text-align: center">
+                JavaScript must be enabled for this page to function.
+            </h1>
+        </noscript>
+        <nav>
+            <a class="nav-title" href="#">Adobe Icon Generator</a>
+            <a
+                href="http://github.com/dheerajpv/adobe-icon-generator"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="nav-link"
+                style="margin-left: auto"
+            >
+                View Source
+            </a>
+        </nav>
+        <main>
+            <section id="input">
+                <label for="text">Enter the text in your icon</label>
+                <input
+                    type="text"
+                    placeholder="Icon Text"
+                    value="Ps"
+                    id="text"
+                />
+
+                <label for="Background">Background Color</label>
+                <input type="color" value="#001833" id="background" />
+
+                <label for="foreground">Foreground Color</label>
+                <input type="color" value="#2DA9FF" id="foreground" />
+
+                <label for="font">Font</label>
+                <select id="font">
+                    <!-- Fonts inserted through JS -->
+                </select>
+                <br />
+
+                <div id="checkboxes">
+                    <input type="checkbox" checked id="bold" />
+                    <label for="bold">Bold</label>
+                    <br />
+                    <input type="checkbox" id="italic" />
+                    <label for="italic">Italic</label>
+                </div>
+                <br />
+
+                <label for="format">Output Format</label>
+                <select id="format">
+                    <!-- Formats inserted through JS -->
+                </select>
+                <br />
+
+                <button id="create">Create Icon</button>
+            </section>
+            <canvas id="canvas" width="788" height="768"></canvas>
+        </main>
+        <footer>
+            Made with ♥ by
+            <a
+                href="http://github.com/dheerajpv"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >dheerajpv</a
+            >.
+            <br />
+            <sub
+                >All generation happens locally and no data is collected. If you
+                want to verify that, look at
+                <a
+                    href="http://github.com/dheerajpv/adobe-icon-generation"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    >the source code</a
+                >.</sub
+            >
+        </footer>
+    </body>
+</html>
